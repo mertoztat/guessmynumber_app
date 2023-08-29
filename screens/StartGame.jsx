@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   numberValue: {
     color: Colors.accent500,
     fontSize: 18,
+    fontFamily: "open-sans",
   },
   inputContainer: {
     justifyContent: "center",

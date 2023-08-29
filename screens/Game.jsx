@@ -15,7 +15,7 @@ const generateRandomBetween = (min, max, exclude) => {
   }
 };
 
-const Game = ({ selectedNumber, setGameOver }) => {
+const Game = ({ selectedNumber, setGameOver, setClickedNumberGuess }) => {
   const [minBoundary, setMinBoundary] = useState(1);
   const [maxBoundary, setMaxBoundary] = useState(100);
 
@@ -66,6 +66,7 @@ const Game = ({ selectedNumber, setGameOver }) => {
         },
       ]);
     }
+    setClickedNumberGuess((prev) => prev + 1);
   };
 
   return (
@@ -110,6 +111,6 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     marginBottom: 15,
     fontSize: 16,
-    fontWeight: "bold",
+    fontFamily: "open-sans-bold",
   },
 });
