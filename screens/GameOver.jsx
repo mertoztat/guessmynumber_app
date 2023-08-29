@@ -15,9 +15,9 @@ const GameOver = ({ finishGame, selectedNumber, clickedNumberGuess }) => {
         />
       </View>
       <Text style={styles.summaryText}>
-        Your phone needed{" "}
-        <Text style={styles.highlight}>{clickedNumberGuess}</Text> rounds to
-        guess the number <Text style={styles.highlight}>{selectedNumber}</Text>.
+        You clicked <Text style={styles.highlight}>{clickedNumberGuess} </Text>
+        times and your guessed number is{" "}
+        <Text style={styles.highlight}>{selectedNumber}</Text>.
       </Text>
       <PrimaryButton onPress={finishGame}>Start New Game</PrimaryButton>
     </View>
