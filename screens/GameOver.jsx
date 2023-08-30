@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Colors from "../constants/Colors";
 import Title from "../components/ui/Title";
-import { deviceWidth } from "../constants/deviceWidth";
+import { deviceWidth } from "../constants/Dimensions";
 
 const GameOver = ({ finishGame, selectedNumber, clickedNumberGuess }) => {
   return (

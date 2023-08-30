@@ -3,6 +3,7 @@ import { StyleSheet, View, TextInput, Alert, Text } from "react-native";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Colors from "../constants/Colors";
 import Title from "../components/ui/Title";
+import { deviceHight } from "../constants/Dimensions";
 
 const StartGame = ({ pickedNumber }) => {
   const [enteredNumber, setEnteredNumber] = useState("");
@@ -67,7 +68,7 @@ export default StartGame;
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
-    marginTop: 100,
+    marginTop: deviceHight < 400 ? 30 : 100,
     alignItems: "center",
   },
   numberValue: {
