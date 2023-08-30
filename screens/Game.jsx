@@ -97,8 +97,8 @@ export default Game;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    padding: 30,
-    marginTop: 10,
+    padding: 24,
+    marginTop: 20,
   },
   ButtonFlex: {
     flexDirection: "row",

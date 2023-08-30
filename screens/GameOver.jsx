@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Colors from "../constants/Colors";
 import Title from "../components/ui/Title";
+import { deviceWidth } from "../constants/deviceWidth";
 
 const GameOver = ({ finishGame, selectedNumber, clickedNumberGuess }) => {
-  console.log("clickedNumberGuess", clickedNumberGuess);
   return (
     <View style={styles.rootContainer}>
       <Title>GAME OVER!</Title>
@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   imageContainer: {
-    width: 300,
-    height: 300,
-    borderRadius: 150,
+    width: deviceWidth < 380 ? 150 : 300,
+    height: deviceWidth < 380 ? 150 : 300,
+    borderRadius: deviceWidth < 380 ? 75 : 150,
     borderWidth: 3,
     borderColor: Colors.primary800,
     overflow: "hidden",
